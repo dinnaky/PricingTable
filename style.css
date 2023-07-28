@@ -1,0 +1,169 @@
+/* CSS GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1D539E;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --font-style: 'Open Sans', sans-serif;
+    --plan-color: #FFFFFF;
+    --fontColor-header: #FFFFFF;
+    --fontColor-description: #828799;
+}
+
+body {
+    background: var(--page-background);
+    font-family: var(--font-style);
+}
+
+main {
+    height: 50vh;
+    background:  #1D539E; 
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+/* CSS header  */
+
+.header-text { 
+    text-align: center;
+    color: var(--fontColor-header);
+}
+
+.header-text h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+/* CSS Price */
+
+.buy-plans {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.plans {
+    border-radius: 10px;
+    background-color: var(--plan-color);
+    width: 24vw;
+}
+
+.content-plans {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-plans {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+}
+
+.plans h2 {  
+    font-size: 18px;
+    padding: 1em 0;
+    font-weight: 600;
+
+}
+
+.price-plans h3 {  
+    font-size: 36px;
+}
+
+.price p {  
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.description {
+    color: var(--fontColor-description);
+}
+
+/* CSS benefits */
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits p {
+    color: #828799;
+}
+
+.benefits-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button-buy a {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*CSS PLAN BASICO*/
+
+.content-plans-basico{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plans-basico {
+    border-radius: 10px;
+    background-color: var(--plan-color);
+    width: 24vw;
+    height: 68vh;
+    transform: scale(1.03);
+}
+
+.plans-basico h2{
+    color: var(--blue);
+    font-size: 18px;
+    padding: 1em 35px;
+    border-radius: 6px;
+    background-color: var(--yellow);
+}
+
+.button-buy-basico a {
+    background-color: #1D539E;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--fontColor-header);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
